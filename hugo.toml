@@ -1,57 +1,76 @@
-baseurl      = "localhost"
-title        = "My Blog"
-languageCode = "en-us"
-theme        = "hello-friend-ng"
-paginate     = 10
+baseURL = "https://olasergiolas.github.io"
+# title = "sergi0"
+author = "Sergio García"
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+ignoreErrors = ["error-remote-getjson"]
+
+# ------------------------------
+theme = "paper"
+title = "sergi0's blog"
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
+  color = 'linen'
 
-  # Subtitle for home
-  # homeSubtitle = "A place for me to dump my infosec adventures."
+  twitter = 'sergiogc_5'
+  github = 'Olasergiolas'
 
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  disableReadOtherPosts = false
+  avatar = 'https://avatars.githubusercontent.com/u/32015541?s=400&u=17235ce4b8ce62c3f061c38cdbaeb7157bc0bc7a&v=4'
+  name = 'Sergio García'
+  bio = 'Reversing stuff for fun'
+# ------------------------------
 
-  # Enable sharing buttons, if you like
-  enableSharingButtons = true
-  
-  # Show a global language switcher in the navigation bar
-  enableGlobalLanguageMenu = true
+# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+#  [markup.highlight]
+#    lineNos = true
 
-  # Metadata mostly used in document's head
-  description = "My new homepage or blog"
-  keywords = "homepage, blog"
-  images = [""]
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 10
 
 [taxonomies]
-    category = "blog"
-    tag      = "tags"
-    series   = "series"
+category = "categories"
+tag = "tags"
+series = "series"
 
-[languages]
-  [languages.en]
-    title = "sergi0"
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+[privacy]
 
-  [languages.en.params]
-    keywords = ""
-    readOtherPosts = "Read other posts"
-    subtitle  = "Personal blog"
+  [privacy.vimeo]
+    disabled = false
+    simple = true
 
-    [languages.en.params.logo]
-      logoText = "Reversing stuff for fun"
-      logoHomeLink = "/blog"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
 
-  # And you can even create generic menu
-  [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true

@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Untagged on Sergiolas</title>
-    <link>//localhost:1313/tags/untagged/</link>
-    <description>Recent content in Untagged on Sergiolas</description>
+    <title>Untagged on sergi0&#39;s blog</title>
+    <link>http://localhost:1313/tags/untagged/</link>
+    <description>Recent content in Untagged on sergi0&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 17 Mar 2024 20:39:55 +0100</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello_world</title>
-      <link>//localhost:1313/posts/hello_world/</link>
+      <link>http://localhost:1313/posts/hello_world/</link>
       <pubDate>Sun, 17 Mar 2024 20:39:55 +0100</pubDate>
-      <guid>//localhost:1313/posts/hello_world/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Hello_world</title>
-      <link>//localhost:1313/posts/test/</link>
-      <pubDate>Sun, 17 Mar 2024 20:39:55 +0100</pubDate>
-      <guid>//localhost:1313/posts/test/</guid>
+      <guid>http://localhost:1313/posts/hello_world/</guid>
       <description></description>
     </item>
   </channel>
